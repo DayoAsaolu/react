@@ -1,0 +1,15 @@
+version: '3'
+services:
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+    environment:
+      - REACT_APP_NAME=attend_ON
+      - REACT_APP_WORD=WORD
+    # env_file:
+    #   - ./env

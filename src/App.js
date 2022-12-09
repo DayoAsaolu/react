@@ -1,25 +1,30 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import  { Clock } from './Components/Clock/Clock'
+import Toggle from './Extra/Toggle';
+import LoginControl from './Components/Login/LoginControl2';
+import RenderPhoto from './Components/photoApi/RenderPhoto'
+import LogInForm from './Components/Login/LogInForm';
+import EssayForm from './Forms/EssayForm';
+import FlavorForm from './Forms/FlavorForm'
+import MemoCallback from './Components/ReactStateMgt/UseMemoCallback';
+import UseEffect from './Components/ReactStateMgt/UseEffect'
+
 
 function App() {
+
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        <MemoCallback/>
+        {/* <UseEffect/> */}
       </header>
     </div>
   );
 }
 
 export default App;
+
